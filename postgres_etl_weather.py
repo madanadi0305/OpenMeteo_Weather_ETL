@@ -75,7 +75,7 @@ def load_weather_data(df):
         host="localhost",
         database="postgres_etl",
         user="postgres",
-        password="NPV@2024",
+        password="####",
         port="5432" # Port is optional, defaults to 5432
         )
         cursor=connect.cursor()
@@ -98,4 +98,5 @@ def load_weather_data(df):
             connect.rollback()
         if connect:
             connect.close()
+
 load_weather_data(df)
